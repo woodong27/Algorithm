@@ -1,6 +1,6 @@
 from pprint import pprint
 
-lst = [-4,-3,-2,-1,0,1,2,3,4]
+lst = [-2,-1,1,2]
 
 cnt = 0
 subset = []

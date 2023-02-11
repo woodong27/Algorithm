@@ -5,3 +5,6 @@ for i in range(10):
         if lst[j]>lst[j+1]:
             lst[j],lst[j+1]=lst[j+1],lst[j]
             print(lst)
+
+print()
+print('최종 정렬 결과 :',lst)

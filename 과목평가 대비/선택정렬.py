@@ -16,7 +16,7 @@ for i in range(10):
     print()
 
 #선택정렬 코드만
-# for i in range(10):
+# for i in range(10):                                                                                                                   `
 #     min_idx=i
 #     for j in range(i+1,10):
 #         if lst[min_idx]>lst[j]:

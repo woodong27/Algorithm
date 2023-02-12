@@ -10,6 +10,13 @@ for x in range(T):
         counts[i]+=1
 
     maxv=max(counts)
+
+    #max안쓰고 최대값 찾기
+    # max_value=0
+    # for i in range(len(counts)):
+    #     if counts[i]>max_value:
+    #         max_value=counts[i]
+
     ans_value, ans_count=0,0
     for i in range(9,-1,-1):
         if counts[i]==maxv:

@@ -13,18 +13,16 @@ for x in range(T):
     count=0
 
     #1. A[i]와 B[j]가 다를때만 조건을 넣어주는 방법
-    '''
-    while i<a and j<b:
-        if A[i]!=B[j]:
-            i=i-j
-            j=-1
-        i+=1
-        j+=1
-
-        if j==b:
-            count+=1
-            j=0
-    '''
+    # while i<a and j<b:
+    #     if A[i]!=B[j]:
+    #         i=i-j
+    #         j=-1
+    #     i+=1
+    #     j+=1
+    #
+    #     if j==b:
+    #         count+=1
+    #         j=0
 
     #2. A[i]와 B[j]가 같을때와 다를 때 두가지 조건을 넣어준 방법
     while i<a and j<b:

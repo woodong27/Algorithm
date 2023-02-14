@@ -19,6 +19,6 @@ for i in range(E):
     graph[v1].append(v2) #그래프의 v1번째 인덱스에 그 자식인 v2를 넣어서 관계를 표시해줌
     # graph[v2].append(v1) #만약 단방향 그래프가 아니라 양방향 그래프면 v2의 자식에도 v1이 있음
 
-S,G=map(int,input().split()) #S:탐색을 시작할 노드, E:탐색하려는 목표 노드
+S,G=map(int,input().split()) #S:탐색을 시작할 노드, G:탐색하려는 목표 노드
 
 print(dfs_stack(graph,S,G))

@@ -7,7 +7,14 @@ def dfs_stack(graph,start,goal):
         now=stack.pop()
         if visited[now]==0: #현재 노드가 방문한적 없는 노드라면
             visited[now]=1 #visited를 1로 만들어주고 계속해서 탐색하기 위해 자식노드를 stack에 넣어줌
-            stack.extend(graph[now]) #extend를 사용해서 자식노드가 2개 이상일 때 스택에 동시에 모두 넣어주고 탐색
+            for i in graph[now]:
+                stack.append(i) #자식노드들을 stack에 push해서 계속 탐색
+                '''
+                만약 더이상 자식 노드가 없으면 stack에 더이상 값이 추가되지 않아
+                스택의 pop이 계속되다가 스택이 비게 되면 탐색 종료
+                '''
+            # 다른 방법
+            # stack.extend(graph[now]) #extend를 사용하면 스택에 자식노드를 한번에 append해줄 수 있음
 
     return visited[goal] #탐색이 끝났을 때 목표 노드를 방문했다면 1, 못했다면 0이 반환됨
 
@@ -22,3 +29,17 @@ for i in range(E):
 S,G=map(int,input().split()) #S:탐색을 시작할 노드, G:탐색하려는 목표 노드
 
 print(dfs_stack(graph,S,G))
+
+'''
+input 예시
+6 5
+1 4
+1 3
+2 3
+2 5
+4 6
+1 6
+
+S,G=1,6으로
+1번 노드에서 탐색을 시작하면 6번노드를 방문하기 때문에 결과가 1이 나옴
+'''

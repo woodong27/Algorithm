@@ -1,6 +1,6 @@
 V,E=map(int,input().split()) #V:노드의 갯수, E:간선의 갯수
 
-#인접 배열
+#인접 행렬
 graph=[[0 for _ in range(V+1)]for _ in range(V+1)] #0~V번까지의 노드 표현
 #인접리스트
 graph2=[[]for _ in range(V+1)]

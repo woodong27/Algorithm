@@ -1,5 +1,4 @@
 def dfs_stack(graph,start,goal):
-
     # 인접 행렬
     # stack=[]
     # stack.append(start)
@@ -11,9 +10,9 @@ def dfs_stack(graph,start,goal):
     #             if graph[now][i]==1:
     #                 stack.append(i)
 
+    # 인접리스트
     stack=[]
     stack.append(start)
-    #인접리스트
     while stack: #더이상 방문할 노드가 없어서 스택이 빌때까지 반복
         now=stack.pop()
         if visited[now]==0: #현재 노드가 방문한적 없는 노드라면

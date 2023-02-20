@@ -1,0 +1,4 @@
+que=[]
+
+def isempty():
+    return

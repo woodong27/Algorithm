@@ -22,7 +22,6 @@ for tc in range(T):
         distance=(house[0]-ri)**2+(house[1]-rj)**2
         if distance>d:
             d=distance
-            fi,fj=house[0],house[1]
 
     ans=math.ceil(d**(1/2))
     print(f'#{tc+1} {ans}')

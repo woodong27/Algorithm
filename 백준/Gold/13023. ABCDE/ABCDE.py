@@ -1,8 +1,5 @@
 # BOJ 13023 G5 ABCDE
 
-import sys
-sys.setrecursionlimit(2000 ** 2)
-
 n, m = map(int, input().split())
 relations = [[] for _ in range(n)]
 

@@ -1,5 +1,6 @@
 # BOJ 1238 G3 파티
 
+import sys
 from heapq import heappush, heappop
 
 
@@ -25,10 +26,11 @@ def dijkstra(start, **kwargs):
 
 
 if __name__ == '__main__':
-    n, m, x = map(int, input().split())
+    enter = sys.stdin.readline
+    n, m, x = map(int, enter().strip().split())
     villages = [[] for _ in range(n + 1)]
     for _ in range(m):
-        a, b, c = map(int, input().split())
+        a, b, c = map(int, enter().strip().split())
         villages[a].append([b, c])
 
     from_x = dijkstra(x)

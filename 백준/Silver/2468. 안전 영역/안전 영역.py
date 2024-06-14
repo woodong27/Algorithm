@@ -20,14 +20,13 @@ if __name__ == '__main__':
     n = int(enter())
     area = [list(map(int, enter().split())) for _ in range(n)]
 
+    max_value = max([max(row) for row in area])
     rain = 0
     answer = 0
     while True:
         visited = [[0] * n for _ in range(n)]
-        max_value = 0
         for i in range(n):
             for j in range(n):
-                max_value = max(max_value, area[i][j])
                 if area[i][j] <= rain:
                     visited[i][j] = 1
 
